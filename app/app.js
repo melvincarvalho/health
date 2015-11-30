@@ -41,7 +41,7 @@ App.controller('Main', function($scope, $http, $location, $timeout, ngAudio, LxN
   var f,g;
 
   var defaultStorageURI = 'https://nutrition.databox.me/Public/nutrition/test';
-  var doap = 'https://melvincarvalho.github.io/nutrition/doap.ttl#this';
+  var doap = 'https://melvincarvalho.github.io/health/doap.ttl#this';
   var defaultInbox = 'https://melvin.databox.me/Public/inbox';
 
   // INIT
@@ -264,7 +264,7 @@ App.controller('Main', function($scope, $http, $location, $timeout, ngAudio, LxN
 
 
     var message = "#nutrition: you consumed "+ nutrition +".";
-    var img = 'https://melvincarvalho.github.io/nutrition/images/icon.png';
+    var img = 'https://melvincarvalho.github.io/health/images/icon.png';
     var post = createPost($scope.user, message, doap, img);
 
     console.log('writing to : ' + $scope.inbox);
